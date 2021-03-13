@@ -1,0 +1,22 @@
+/* BACKGROUNDS & BORDERS */
+
+.Navbar-wrapper {
+    background-color: plum;
+}
+/* ***************************************** */
+
+@media screen and (max-width: 419px) {
+   
+            
+}
+    /* ***************************************** */
+
+    @media screen and (min-width: 420px) {
+        
+    
+       .Navbar-container {
+           display: flex;
+           flex-flow: row nowrap;
+       }
+            
+}
