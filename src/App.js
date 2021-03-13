@@ -1,7 +1,15 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
+import NavList from './components/Nav/NavList';
+
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Error from './pages/Error';
 
 import './App.css';
+
 
 function App() {
   return (
@@ -22,7 +30,12 @@ function App() {
         </a> */}
       </header>
       <main className="App-main">
-
+        <Switch>
+          <Route exact path="/about" component={About} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/404" component={Error} />
+        </Switch>
       </main>
 
     </div>
