@@ -1,6 +1,10 @@
-/* BORDERS */
+/* BACKGROUNDS & BORDERS */
 .Menu-wrapper {
     border: 3px seagreen dotted;
+}
+
+.MenuNav-wrapper {
+    background-color: turquoise;
 }
 /* ***************************************** */
 .Menu-wrapper h1 {
@@ -13,16 +17,30 @@
 }
 
 /* ***************************************** */
-@media screen and (max-width: 419px) {
+@media screen and (min-width: 420px) {
     .Menu-wrapper {
         min-width: 25%;
+    }
+
+    .menu-container.display {
+        display: none;
     }
 }
 
 /* ***************************************** */
 
   @media screen and (min-width: 700px) {
+    .Menu-wrapper {
+        width: 100vw;
+    }
     .Menu-wrapper h1 {
         font-size: 3em;
       }
+    .menu-container.display {
+        display: inline-block;
+    }
+    .hamburgerMenu-container.display {
+        display: none;
+    }
+    
   }
