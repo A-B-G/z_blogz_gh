@@ -1,11 +1,11 @@
 import React from 'react';
-import Menu from '../Menu/Menu';
+import Navbar from '../Nav/Navbar';
 import './Header.css';
 
 const Header = () => {
     return (
         <div className="Header-wrapper">
-            <Menu />
+            <Navbar />
             <h1>Header</h1>
         </div>
     )
