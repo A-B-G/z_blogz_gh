@@ -1,9 +1,14 @@
-// import './App.css';
+import React from 'react';
+import Header from './components/Header/Header';
+
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Header />
+
         {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -16,6 +21,10 @@ function App() {
           Learn React
         </a> */}
       </header>
+      <main className="App-main">
+
+      </main>
+
     </div>
   );
 }

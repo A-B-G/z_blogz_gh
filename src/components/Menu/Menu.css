@@ -1,0 +1,28 @@
+/* BORDERS */
+.Menu-wrapper {
+    border: 3px seagreen dotted;
+}
+/* ***************************************** */
+.Menu-wrapper h1 {
+    font-size: 2em;
+}
+@media screen and (max-width: 419px) {
+    .Menu-wrapper {
+        min-width: 25%;
+    }
+}
+
+/* ***************************************** */
+@media screen and (max-width: 419px) {
+    .Menu-wrapper {
+        min-width: 25%;
+    }
+}
+
+/* ***************************************** */
+
+  @media screen and (min-width: 700px) {
+    .Menu-wrapper h1 {
+        font-size: 3em;
+      }
+  }
