@@ -4,7 +4,11 @@ import './Nav.css';
 
 const NavListItem = ({ link }) => {
     return (
-        <li><NavLink to={link.linkpath}>{link.linkname}</NavLink></li>
+        <li key={link.linkname}>
+            <NavLink to={link.linkpath}>
+                {link.linkname}
+            </NavLink>
+        </li>
     )
 };
 

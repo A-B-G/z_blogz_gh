@@ -4,9 +4,8 @@ import './Nav.css';
 
 const NavList = ({ links }) => {
     return (
-        <ul>
+        <ul className="navList-ul">
             {links.map(link => <NavListItem link={link} />)}
-
         </ul>
     )
 }

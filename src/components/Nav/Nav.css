@@ -3,20 +3,32 @@
 .Navbar-wrapper {
     background-color: plum;
 }
+.navList-ul {
+    list-style: none;
+}
 /* ***************************************** */
 
 @media screen and (max-width: 419px) {
    
             
 }
-    /* ***************************************** */
+/* ***************************************** */
 
-    @media screen and (min-width: 420px) {
-        
+@media screen and (min-width: 420px) {
     
-       .Navbar-container {
-           display: flex;
-           flex-flow: row nowrap;
-       }
-            
+
+    .Navbar-container {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+        
+}
+/* ***************************************** */
+
+@media screen and (min-width: 700px) {
+    
+    .navList-ul {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
