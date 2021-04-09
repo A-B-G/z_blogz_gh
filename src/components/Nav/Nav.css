@@ -3,14 +3,35 @@
 .Navbar-wrapper {
     background-color: plum;
 }
+/* END BACKGROUNDS & BORDERS***************************************** */
+
 .navList-ul {
+    /*CSS RESET*/
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    
     list-style: none;
 }
-/* ***************************************** */
+.navList-li a {
+    padding-right: 25px;
+}
 
 @media screen and (max-width: 419px) {
    
-            
+    .navList-ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: flex-start;
+
+        text-align: left;
+        padding-left: 5%;
+
+    }
+    
 }
 /* ***************************************** */
 

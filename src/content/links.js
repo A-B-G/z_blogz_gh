@@ -1,15 +1,19 @@
 
 export const navLinks = [
     {
-      linkname: "about",
+    linkname: "Home",
+    linkpath: "/home"
+    },
+    {
+      linkname: "About",
       linkpath: "/about"
     },
     {
-      linkname: "blog",
+      linkname: "Blog",
       linkpath: "/blog"
     },
     { 
-      linkname: "contact",
+      linkname: "Contact",
       linkpath: "/contact"
     }
     

@@ -3,6 +3,7 @@ import Menu from '../Menu/Menu';
 import './Nav.css';
 
 const Navbar = () => {
+
     return (
         <div className="Navbar-wrapper">
             <nav className="Navbar-container">

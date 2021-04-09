@@ -6,25 +6,50 @@
 .MenuNav-wrapper {
     background-color: turquoise;
 }
-/* ***************************************** */
+/* END BACKGROUNDS & BORDERS ***************************************** */
+
 .Menu-wrapper h1 {
     font-size: 2em;
 }
+/* BURGER MENU */
+.hamburgerMenu-container {
+    display: flex;
+    flex-flow: column wrap;
+
+    align-content: flex-start;
+}
+
+.toggle-open {
+	transform: translateX(0);
+}
+
+.toggle-closed {
+	transform: translateX(-300%);
+}
+/* END BURGER MENU */
+
 @media screen and (max-width: 419px) {
     .Menu-wrapper {
         min-width: 25%;
     }
 }
+.flower-logo {
+    background-image: url('../../images/flower_img.png');
+    background-size: cover;
+    background-position: left;
 
+    height: 100px;
+    width: 100px;
+}
 /* ***************************************** */
 @media screen and (min-width: 420px) {
     .Menu-wrapper {
         min-width: 25%;
     }
 
-    .menu-container.display {
+    /* .menu-container.display {
         display: none;
-    }
+    } */
 }
 
 /* ***************************************** */
@@ -36,11 +61,16 @@
     .Menu-wrapper h1 {
         font-size: 3em;
       }
-    .menu-container.display {
-        display: inline-block;
-    }
     .hamburgerMenu-container.display {
         display: none;
+    }
+    .menu-container.display {
+        display: inline-block;
+        transform: translateX(0);
+    }
+    
+    div.flower-logo {
+        display: inline-block;
     }
     
   }
