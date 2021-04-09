@@ -1,17 +1,14 @@
 import React from 'react';
 
-import './Posts.css';
-import testData from '../../testData';
-
-console.log("test data:", testData);
+import './Blog.css';
 
 export const FullPost = (props) => {
 
-    const postId = props.match.params.postId;
-    console.log("postId:", postId);
+    const postTitle = props.match.params.postTitle;
+    console.log("postTitle:", postTitle);
 
     return (
-        <div className="flex responsive">
+        <div className="Blog-container">
             <h1>Blog Post</h1>
             <h2>Part I: Installing Postgresql</h2>
 
@@ -94,4 +91,6 @@ export const FullPost = (props) => {
         </div>
     )
 }
+
+export default FullPost;
 

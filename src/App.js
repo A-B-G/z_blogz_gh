@@ -5,6 +5,7 @@ import NavList from './components/Nav/NavList';
 
 import About from './pages/About';
 import Blog from './pages/Blog';
+import FullPost from './components/Blog/FullPost';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 
@@ -33,6 +34,7 @@ function App() {
         <Switch>
           <Route exact path="/about" component={About} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/:postTitle" component={FullPost} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/404" component={Error} />
         </Switch>
